@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Image from "next/image";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -130,14 +131,38 @@ export default function Home() {
       {/* Visitas */}
       <section id="visitas" className="p-6 md:p-12 bg-gray-200">
         <h2 className="text-2xl font-bold mb-4 text-center">Agende Sua Visita</h2>
-        <p className="text-center text-gray-700">[Informações de visitas e funcionamento]</p>
+        <section id="visita" className="bg-gray-100 py-16 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Agende Sua Visita</h2>
+            <form className="space-y-4">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                className="w-full p-3 border rounded-md focus:outline-none"
+              />
+              <input
+                type="date"
+                className="w-full p-3 border rounded-md focus:outline-none"
+              />
+              <textarea
+                placeholder="Mensagem"
+                rows={4}
+                className="w-full p-3 border rounded-md focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-800 transition"
+              >
+                Enviar solicitação
+              </button>
+            </form>
+          </div>
+        </section>
+
       </section>
 
       {/* Contato */}
-      <section id="contato" className="p-6 md:p-12">
-        <h2 className="text-2xl font-bold mb-4 text-center">Contato</h2>
-        <p className="text-center text-gray-700">[WhatsApp, Instagram, Formulário... tudo aqui]</p>
-      </section>
+      <Contact />
 
       {/* Rodapé */}
       <footer className="text-center py-6 text-sm text-gray-500 bg-white">
