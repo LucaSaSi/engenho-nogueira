@@ -11,35 +11,42 @@ const Contact = () => {
                 <p className="text-gray-700 mb-6">Fale conosco ou acompanhe nas redes sociais:</p>
 
                 <div className="flex justify-center flex-wrap gap-6">
-                    <Link href="https://wa.me/558896973991" target="_blank">
-                        <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
-                            <FaWhatsappSquare size={40} color="#25D366" />
-                        </div>
-                    </Link>
+                    {process.env.NEXT_PUBLIC_WHATSAPP_URL && (
+                        <Link href={process.env.NEXT_PUBLIC_WHATSAPP_URL} target="_blank">
+                            <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
+                                <FaWhatsappSquare size={40} color="#25D366" />
+                            </div>
+                        </Link>
+                    )}
 
-                    <Link href="https://www.instagram.com/engenhonogueira" target="_blank">
-                        <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
-                            <FaInstagramSquare size={40} color="#25D366" />
-                        </div>
-                    </Link>
-
-                    <Link href="https://www.facebook.com/cachacanogueira" target="_blank">
-                        <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
-                            <FaFacebookSquare size={40} color="#25D366" />
-                        </div>
-                    </Link>
-
-                    <Link href="https://www.youtube.com/channel/UCDA9FiislCGXkel5IvjdKRw" target="_blank">
-                        <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
-                            <FaYoutube size={40} color="#25D366" />
-                        </div>
-                    </Link>
-
-                    <Link href="https://www.tiktok.com/@engenhonogueira" target="_blank">
-                        <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
-                            <AiFillTikTok size={40} color="#25D366" />
-                        </div>
-                    </Link>
+                    {process.env.NEXT_PUBLIC_INSTAGRAM_URL && (
+                        <Link href={process.env.NEXT_PUBLIC_INSTAGRAM_URL} target="_blank">
+                            <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
+                                <FaInstagramSquare size={40} color="#25D366" />
+                            </div>
+                        </Link>
+                    )}
+                    {process.env.NEXT_PUBLIC_FACEBOOK_URL &&
+                        <Link href={process.env.NEXT_PUBLIC_FACEBOOK_URL} target="_blank">
+                            <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
+                                <FaFacebookSquare size={40} color="#25D366" />
+                            </div>
+                        </Link>
+                    }
+                    {process.env.NEXT_PUBLIC_YOUTUBE_URL && (
+                        <Link href={process.env.NEXT_PUBLIC_YOUTUBE_URL} target="_blank">
+                            <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
+                                <FaYoutube size={40} color="#25D366" />
+                            </div>
+                        </Link>
+                    )}
+                    {process.env.NEXT_PUBLIC_TIKTOK_URL && (
+                        <Link href={process.env.NEXT_PUBLIC_TIKTOK_URL} target="_blank">
+                            <div className="bg-gray-100 p-4 rounded-full shadow hover:scale-110 transition">
+                                <AiFillTikTok size={40} color="#25D366" />
+                            </div>
+                        </Link>
+                    )}
                 </div>
             </div>
         </section>
