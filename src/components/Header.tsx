@@ -9,7 +9,11 @@ export default function Header() {
 
     return (
         <header className="bg-green-100 shadow-md fixed top-0 w-full z-50">
-            <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div
+                style={{
+                    fontFamily: 'var(--font-sigmar)',
+                }}
+                className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center ">
                 {/* Logo */}
                 <Image
                     src="/logo.png"
@@ -43,26 +47,26 @@ export default function Header() {
                 {/* Navegação */}
                 <nav
                     className={`${isMenuOpen ? 'block' : 'hidden'
-                        } absolute top-full left-0 w-full bg-green-100 md:static md:flex md:space-x-4 md:w-auto`}
+                        } absolute top-full left-0 w-full bg-green-100 md:static md:flex md:space-x-4 md:w-auto `}
                 >
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://www.google.com/maps/dir//Lambedouro,+Vi%C3%A7osa+do+Cear%C3%A1+-+CE,+62300-000+@-3.581498,-41.022260/@-3.5818372,-41.0221632,17z/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x7eb41bdc35ffe85:0xcde5000c89462cfe!3e0"
-                        className="block font-semibold text-2xl text-gray-700 hover:text-green-800 transition py-2 px-4 md:inline"
+                        className="block text-2xl text-gray-800 hover:text-green-700 transition py-2 px-4 md:inline"
                     >
                         Localização
                     </a>
-                    <Link href="#sobre" className="block font-semibold text-2xl text-gray-700 hover:text-green-800 transition py-2 px-4 md:inline">
+                    <Link href="#sobre" className="block text-2xl text-gray-800 hover:text-green-700 transition py-2 px-4 md:inline">
                         Sobre
                     </Link>
-                    <Link href="#produtos" className="block font-semibold text-2xl text-gray-700 hover:text-green-800 transition py-2 px-4 md:inline">
+                    <Link href="#produtos" className="block text-2xl text-gray-800 hover:text-green-700 transition py-2 px-4 md:inline">
                         Produtos
                     </Link>
-                    <Link href="#visitas" className="block font-semibold text-2xl text-gray-700 hover:text-green-800 transition py-2 px-4 md:inline">
+                    <Link href="#visitas" className="block text-2xl text-gray-800 hover:text-green-700 transition py-2 px-4 md:inline">
                         Visitas
                     </Link>
-                    <Link href="#contato" className="block font-semibold text-2xl text-gray-700 hover:text-green-800 transition py-2 px-4 md:inline">
+                    <Link href="#contato" className="block text-2xl text-gray-800 hover:text-green-700 transition py-2 px-4 md:inline">
                         Contato
                     </Link>
                 </nav>
