@@ -1,24 +1,45 @@
+'use client'
 import Header from "@/components/Header";
 import Image from "next/image";
 import Contact from "@/components/Contact";
 
 export default function Home() {
+
   return (
     <main className="min-h-screen bg-white text-gray-800 scroll-smooth">
       <Header />
 
       {/* Banner */}
-      <section className="pt-20 relative h-[60vh] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl text-white font-bold text-center">
-            Engenho Nogueira
+      <section className="pt-20 relative h-[90vh] bg-cover bg-center">
+        {/* Camada de fundo com blur */}
+        <div
+          className="absolute inset-0 bg-black bg-opacity-50"
+          style={{
+            backgroundImage: "url('/engenho.png')",
+            backgroundSize: "cover",
+            filter: "blur(2px)",
+          }}
+        ></div>
+
+        {/* Texto acima do blur */}
+        <div className="absolute inset-0 flex items-center justify-center"
+        >
+          <h1
+            className="inset-0 pl-3 h-1/2 w-full flex items-center text-3xl md:text-6xl text-gray-200 font-bold text-left"
+            style={{
+              fontFamily: "var(--font-rubik-doodle-shadow)",
+              fontSize: "4rem",
+              textShadow: "4px 4px 8px rgba(0, 0, 0, 0.7)",
+            }}
+          >
+            Engenho Nogueira <br /> Tradição e Sabor <br /> em cada Dose
           </h1>
         </div>
       </section>
 
       {/* Introdução */}
       <section className="p-6 md:p-12 max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 font-">
           Tradição, sabor e história desde 1892
         </h2>
         <p className="text-lg leading-relaxed">
@@ -130,36 +151,33 @@ export default function Home() {
 
       {/* Visitas */}
       <section id="visitas" className="p-6 md:p-12 bg-gray-200">
-        <h2 className="text-2xl font-bold mb-4 text-center">Agende Sua Visita</h2>
-        <section id="visita" className="bg-gray-100 py-16 px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Agende Sua Visita</h2>
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Seu nome"
-                className="w-full p-3 border rounded-md focus:outline-none"
-              />
-              <input
-                type="date"
-                className="w-full p-3 border rounded-md focus:outline-none"
-              />
-              <textarea
-                placeholder="Mensagem"
-                rows={4}
-                className="w-full p-3 border rounded-md focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-800 transition"
-              >
-                Enviar solicitação
-              </button>
-            </form>
-          </div>
-        </section>
-
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Agende Sua Visita</h2>
+          <form className="space-y-4">
+            <input
+              type="text"
+              placeholder="Seu nome"
+              className="w-full p-3 border rounded-md focus:outline-none"
+            />
+            <input
+              type="date"
+              className="w-full p-3 border rounded-md focus:outline-none"
+            />
+            <textarea
+              placeholder="Mensagem"
+              rows={4}
+              className="w-full p-3 border rounded-md focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-800 transition"
+            >
+              Confirmar Visita
+            </button>
+          </form>
+        </div>
       </section>
+
 
       {/* Contato */}
       <Contact />
