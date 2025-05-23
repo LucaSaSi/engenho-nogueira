@@ -43,8 +43,8 @@ export default function Home() {
           Tradição, sabor e história desde 1892
         </h2>
         <p className="text-lg leading-relaxed">
-          Diretamente do Vale do Lambedouro em Viçosa do Ceará, o Engenho Nogueira mantém viva a arte da produção artesanal de cachaça, herdada há gerações. Conheça nossos produtos e venha visitar essa história viva do sertão.
-        </p>
+          O Engenho está localizado no Vale do Lambedouro, zona rural do município de Viçosa do Ceará, tendo uma distância aproximada de 15 km do centro da cidade até o mesmo. O percurso é feito boa parte em asfalto, contando apenas com 2,5 km de estrada de terra, mas sendo possível o tráfego de vans e micro-ônibus durante todo o ano.
+          No trajeto o visitante pode apreciar a paisagem natural e singular da região, enquanto desce a ladeira que liga o centro à zona rural.        </p>
       </section>
 
       {/* Sobre o Engenho */}
@@ -57,15 +57,9 @@ export default function Home() {
             className="rounded-lg mb-4"
             width={800}
             height={400} />
-          <p>
-            Fundado há mais de 130 anos, o Engenho Nogueira é um símbolo de tradição no coração de Viçosa do Ceará, localizado na região do Vale do Lambedouro. A produção de cachaça artesanal é feita com esmero e respeito às técnicas passadas por gerações da família.
-          </p>
-          <p>
-            Com equipamentos que preservam o estilo tradicional e um ambiente que respira história, o Engenho é muito mais que um local de produção — é uma experiência cultural e sensorial.
-          </p>
-          <p>
-            Todo o processo é feito de forma artesanal, desde o corte da cana até o envelhecimento da cachaça. O resultado é um produto genuíno, saboroso e cheio de identidade.
-          </p>
+          <p>Desde os meados do século XX, a família Nogueira mantém a tradição de produzir cachaça artesanal de alambique e de cuidar da história singular desta produção de aguardente.
+            O processo de produção artesanal, a vivência da cultura sertaneja e os sabores da culinária tradicional do sertão são atrativos que proporcionam aos visitantes momentos inesquecíveis.
+            A casa grande, como é conhecida pela família, é o contato com um pedaço da história de Viçosa do Ceará, contada através da arquitetura, culinária e agricultura familiar mantida há 111 anos.</p>
         </div>
 
       </section>
@@ -82,8 +76,8 @@ export default function Home() {
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={300}
               height={300} />
-            <h3 className="text-lg font-semibold mt-2">Cachaça Tradicional</h3>
-            <p className="text-sm text-gray-600">Sabor suave, produzida de forma artesanal, direto do alambique.</p>
+            <h3 className="text-lg font-semibold mt-2">Licor de Bombom</h3>
+            <p className="text-sm text-gray-600">Licor de Bombom: A mistura de sabores da cachaça Nogueira e os toques doces dos bombons de morango, menta, café e chocolate</p>
           </div>
 
           {/* Produto 2 */}
@@ -95,11 +89,11 @@ export default function Home() {
               width={400}
               height={400} />
             <h3 className="text-lg font-semibold mt-2">Cachaça Envelhecida</h3>
-            <p className="text-sm text-gray-600">Envelhecida em tonéis de amendoim, com sabor amadeirado e marcante.</p>
+            <p className="text-sm text-gray-600">Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau D'arco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial</p>
           </div>
 
           {/* Produto 3 */}
-          <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
+          {/* <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto3.png"
               alt="Licor artesanal"
@@ -108,9 +102,9 @@ export default function Home() {
               height={400} />
             <h3 className="text-lg font-semibold mt-2">Licor Caseiro</h3>
             <p className="text-sm text-gray-600">Sabores variados preparados com frutas da região e muito carinho.</p>
-          </div>
+          </div> */}
 
-          {/* Produto 4 */}
+          Produto 4
           <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto4.png"
@@ -118,8 +112,8 @@ export default function Home() {
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={400}
               height={400} />
-            <h3 className="text-lg font-semibold mt-2">Licor Caseiro</h3>
-            <p className="text-sm text-gray-600">Sabores variados preparados com frutas da região e muito carinho.</p>
+            <h3 className="text-lg font-semibold mt-2">Suvenir</h3>
+            <p className="text-sm text-gray-600">Souvernir: Produtos que levam a marca e o slogam da cachaça Nogueira. Como bonés, copos e camisas.</p>
           </div>
 
           {/* Produto 5 */}
@@ -130,8 +124,8 @@ export default function Home() {
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={400}
               height={400} />
-            <h3 className="text-lg font-semibold mt-2">Licor Caseiro</h3>
-            <p className="text-sm text-gray-600">Sabores variados preparados com frutas da região e muito carinho.</p>
+            <h3 className="text-lg font-semibold mt-2">Licor Tradicional</h3>
+            <p className="text-sm text-gray-600">Licores Tradicionais: A mistura de sabores da Cachaça Nogueira e das especiarias, raízes, folhas e frutos tradicionais da região.</p>
           </div>
 
           {/* Produto 6 */}
@@ -142,8 +136,8 @@ export default function Home() {
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={400}
               height={400} />
-            <h3 className="text-lg font-semibold mt-2">Licor Caseiro</h3>
-            <p className="text-sm text-gray-600">Sabores variados preparados com frutas da região e muito carinho.</p>
+            <h3 className="text-lg font-semibold mt-2">Bebida alcólica mista</h3>
+            <p className="text-sm text-gray-600">Bebida: Uma caipirinha pronta que vai surpreender com o sabor das frutas e da cachaça Nogueira, ideal para tomar gelada ou preparar seu drink.</p>
           </div>
         </div>
 
