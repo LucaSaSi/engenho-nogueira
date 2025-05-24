@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* Introdução */}
       <section className="p-6 md:p-12 max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 font-" style={{ fontFamily: "MinhaFonte" }}>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 font-" style={{ fontFamily: "var(--font-radley)" }}>
           Tradição, sabor e história desde 1892
         </h2>
         <p className="text-lg leading-relaxed" style={{ fontFamily: "var(--font-dosis)", fontSize: 20 }}>
@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* Sobre o Engenho */}
       <section id="sobre" className="p-6 md:p-12 bg-gray-100 border-t-2 border-gray-200">
-        <h2 className="text-3xl font-bold mb-4 text-center" style={{ fontFamily: "MinhaFonte" }}>Casa Grande</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center" style={{ fontFamily: "var(--font-radley)" }}>Casa Grande</h2>
         <div className="max-w-4xl mx-auto text-center text-gray-800 space-y-4">
           <Image
             src="/casa-grande.png"
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Produtos */}
       <section id="produtos" className="p-6 md:p-12 bg-gray-100 w-full border-t-2 border-b-2 border-gray-300">
-        <h2 className="text-5xl font-bold mb-4 text-center" style={{ fontFamily: 'MinhaFonte' }}>Principais Produtos</h2>
+        <h2 className="text-5xl font-bold mb-4 text-center" style={{ fontFamily: 'var(--font-radley)' }}>Principais Produtos</h2>
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {/* Produto 1 */}
           <div
@@ -159,7 +159,7 @@ export default function Home() {
       <section id="visitas" className="p-6 md:p-12 bg-gray-200">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Agende Sua Visita</h2>
-          <form className="space-y-4">
+          {/* <form className="space-y-4">
             <input
               type="text"
               placeholder="Seu nome"
@@ -178,9 +178,10 @@ export default function Home() {
               type="submit"
               className="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-800 transition"
             >
-              Confirmar Visita
+              Confirmar Visita 
             </button>
-          </form>
+          </form> */}
+
         </div>
       </section>
 
