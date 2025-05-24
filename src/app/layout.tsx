@@ -1,7 +1,37 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Sigmar_One, Agbalumo, Rubik_Doodle_Shadow } from "next/font/google";
+import { Sigmar_One, Agbalumo, Rubik_Doodle_Shadow, Dosis, Joti_One, Radley, Gwendolyn, Borel } from "next/font/google";
+
+const borel = Borel({
+  variable: "--font-borel",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const gwendolyn = Gwendolyn({
+  variable: "--font-gwendolyn",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const radley = Radley({
+  variable: "--font-radley",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const jotiOne = Joti_One({
+  variable: "--font-joti-one",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const dosis = Dosis({
+  variable: "--font-dosis",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const rubikDoodleShadow = Rubik_Doodle_Shadow({
   variable: "--font-rubik-doodle-shadow",
@@ -50,6 +80,11 @@ export default function RootLayout({
           ${sigmar.variable}
            ${agbalumo.variable} 
            ${rubikDoodleShadow.variable}
+           ${dosis.variable}
+          ${jotiOne.variable}
+          ${radley.variable}
+          ${gwendolyn.variable}
+          ${borel.variable}
            antialiased`}
       >
         {children}
