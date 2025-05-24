@@ -17,7 +17,7 @@ export default function Home() {
           style={{
             backgroundImage: "url('/casa-grande.png')",
             backgroundSize: "cover",
-            filter: "blur(2px)",
+            filter: "blur(3px)",
           }}
         ></div>
 
@@ -25,14 +25,14 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center"
         >
           <h1
-            className="inset-0 pl-3 h-1/2 w-full flex items-center text-3xl md:text-6xl text-gray-200 font-bold text-left"
+            className="inset-0 pl-3 h-1/2 w-full flex items-center text-5xl lg:text-7xl text-gray-200 font-bold text-left"
             style={{
               fontFamily: "var(--font-joti-one)",
-              fontSize: "4rem",
+              // fontSize: "3rem",
               textShadow: "4px 4px 8px rgba(0, 0, 0, 0.7)",
             }}
           >
-            Cachaça Nogueira <br /> Marcante como o nomeda família, inesquecível como uma infância no sertão.
+            Cachaça Nogueira <br /> Marcante como o nome da família, inesquecível como uma infância no sertão
           </h1>
         </div>
       </section>
