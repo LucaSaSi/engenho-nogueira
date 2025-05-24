@@ -1,7 +1,9 @@
 'use client'
-import Header from "@/components/Header";
 import Image from "next/image";
+import Header from "@/components/Header";
 import Contact from "@/components/Contact";
+import Products from "@/components/Products";
+import Visit from "@/components/Visit";
 
 export default function Home() {
 
@@ -64,136 +66,13 @@ export default function Home() {
 
       </section>
 
-      {/* Produtos */}
-      <section id="produtos" className="p-6 md:p-12 bg-gray-100 w-full border-t-2 border-b-2 border-gray-300">
-        <h2 className="text-5xl font-bold mb-4 text-center" style={{ fontFamily: 'var(--font-radley)' }}>Principais Produtos</h2>
-        <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {/* Produto 1 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto1.png"
-              alt={"Licor de Bombom"}
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={300}
-              height={300} />
-            <h3 className="text-lg font-semibold" >LICOR DE BOMBOM</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Licor de Bombom: A mistura de sabores da cachaça Nogueira e os toques doces dos bombons de morango, menta, café e chocolate</p>
-          </div>
+      {/*Seção de Produtos */}
+      <Products />
 
-          {/* Produto 2 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto2.png"
-              alt="Cachaça envelhecida"
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={400}
-              height={400} />
-            <h3 className="text-lg font-semibold mt-2">CACHAÇA ENVELHECIDA</h3>
-            <p
-              className="text-sm text-gray-700"
-              style={{ fontFamily: "var(--font-dosis)" }}>
-              Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau Darco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial
-            </p>
-          </div>
+      {/*Seção de Visitas */}
+      <Visit />
 
-          {/* Produto 3 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto3.png"
-              alt="Chachaça Prata"
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={400}
-              height={400} />
-            <h3 className="text-lg font-semibold mt-2">CACHAÇA PRATA</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Cachaça Prata: O sabor autêntico da cachaça de alambique de cobre produzida em Viçosa do Ceará</p>
-          </div>
-
-          {/* Produto 4 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto4.png"
-              alt="SUVENIR"
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={400}
-              height={400} />
-            <h3 className="text-lg font-semibold mt-2">SUVENIR</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Souvernir: Produtos que levam a marca e o slogam da cachaça Nogueira. Como bonés, copos e camisas.</p>
-          </div>
-
-          {/* Produto 5 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto5.png"
-              alt="LICOR TRADICIONAL"
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={400}
-              height={400} />
-            <h3 className="text-lg font-semibold mt-2">LICOR TRADICIONAL</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Licores Tradicionais: A mistura de sabores da Cachaça Nogueira e das especiarias, raízes, folhas e frutos tradicionais da região.</p>
-          </div>
-
-          {/* Produto 6 */}
-          <div
-            style={{ fontFamily: "var(--font-radley)" }}
-            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
-            <Image
-              src="/produto6.png"
-              alt="BIBIDA ALCÓOLICA MISTA"
-              className="h-100 w-full mx-auto object-cover rounded-lg"
-              width={400}
-              height={400} />
-            <h3 className="text-lg font-semibold mt-2">BEBIDA ALCÓOLICA MISTA</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Bebida: Uma caipirinha pronta que vai surpreender com o sabor das frutas e da cachaça Nogueira, ideal para tomar gelada ou preparar seu drink.</p>
-          </div>
-        </div>
-
-      </section>
-
-      {/* Visitas */}
-      <section id="visitas" className="p-6 md:p-12 bg-gray-200">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Quer fazer uma Visita?</h2>
-
-          <div className="mb-4 p-4 bg-white rounded shadow text-gray-800">
-            <h3 className="text-xl font-semibold mb-2">Visitação</h3>
-            <p>
-              A visita é um Tour guiado por nossa casa centenária, instalações do Engenho e degustação de nossos produtos, por uma taxa de <span className="font-bold">R$15,00</span> por pessoa. 🤠🏠⚙🥃
-            </p>
-          </div>
-
-          <div className="mb-4 p-4 bg-white rounded shadow text-gray-800">
-            <h3 className="text-xl font-semibold mb-2">Não pagam a taxa de visitação:</h3>
-            <ul className="list-disc list-inside">
-              <li>Crianças até 12 anos 👶🏻</li>
-              <li>Idosos a partir de 65 anos 👨🏻‍🦳</li>
-            </ul>
-          </div>
-
-          <div className="text-center mt-6">
-            <a
-              href={process.env.NEXT_PUBLIC_WHATSAPP_URL || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition"
-            >
-              Agende uma visita no WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Contato */}
+      {/* Seção de contato */}
       <Contact />
 
       {/* Rodapé */}
