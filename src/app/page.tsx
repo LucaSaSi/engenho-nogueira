@@ -93,7 +93,11 @@ export default function Home() {
               width={400}
               height={400} />
             <h3 className="text-lg font-semibold mt-2">CACHAÇA ENVELHECIDA</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau D'arco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial</p>
+            <p
+            className="text-sm text-gray-700"
+             style={{ fontFamily: "var(--font-dosis)" }}>
+              Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau Darco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial
+              </p>
           </div>
 
           {/* Produto 3 */}
@@ -135,7 +139,7 @@ export default function Home() {
               width={400}
               height={400} />
             <h3 className="text-lg font-semibold mt-2">LICOR TRADICIONAL</h3>
-            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Licores Tradicionais: A mistura de sabores da Cachaça Nogueira e das especiarias, raízes, folhas e frutos tradicionais da região.</p>
+            <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-dosis)" }}>Licores Tradicionais: A mistura de sabores da Cachaça Nogueira e das especiarias, raízes, folhas e frutos tradicionais da região.</p>
           </div>
 
           {/* Produto 6 */}
