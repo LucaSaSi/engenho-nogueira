@@ -94,10 +94,10 @@ export default function Home() {
               height={400} />
             <h3 className="text-lg font-semibold mt-2">CACHAÇA ENVELHECIDA</h3>
             <p
-            className="text-sm text-gray-700"
-             style={{ fontFamily: "var(--font-dosis)" }}>
+              className="text-sm text-gray-700"
+              style={{ fontFamily: "var(--font-dosis)" }}>
               Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau Darco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial
-              </p>
+            </p>
           </div>
 
           {/* Produto 3 */}
@@ -162,30 +162,33 @@ export default function Home() {
       {/* Visitas */}
       <section id="visitas" className="p-6 md:p-12 bg-gray-200">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Agende Sua Visita</h2>
-          {/* <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Seu nome"
-              className="w-full p-3 border rounded-md focus:outline-none"
-            />
-            <input
-              type="date"
-              className="w-full p-3 border rounded-md focus:outline-none"
-            />
-            <textarea
-              placeholder="Mensagem"
-              rows={4}
-              className="w-full p-3 border rounded-md focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="w-full bg-green-700 text-white py-3 rounded-md hover:bg-green-800 transition"
-            >
-              Confirmar Visita 
-            </button>
-          </form> */}
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">Quer fazer uma Visita?</h2>
 
+          <div className="mb-4 p-4 bg-white rounded shadow text-gray-800">
+            <h3 className="text-xl font-semibold mb-2">Visitação</h3>
+            <p>
+              A visita é um Tour guiado por nossa casa centenária, instalações do Engenho e degustação de nossos produtos, por uma taxa de <span className="font-bold">R$15,00</span> por pessoa. 🤠🏠⚙🥃
+            </p>
+          </div>
+
+          <div className="mb-4 p-4 bg-white rounded shadow text-gray-800">
+            <h3 className="text-xl font-semibold mb-2">Não pagam a taxa de visitação:</h3>
+            <ul className="list-disc list-inside">
+              <li>Crianças até 12 anos 👶🏻</li>
+              <li>Idosos a partir de 65 anos 👨🏻‍🦳</li>
+            </ul>
+          </div>
+
+          <div className="text-center mt-6">
+            <a
+              href={process.env.NEXT_PUBLIC_WHATSAPP_URL || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition"
+            >
+              Agende uma visita no WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
