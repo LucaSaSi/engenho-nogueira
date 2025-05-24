@@ -15,7 +15,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-black bg-opacity-50"
           style={{
-            backgroundImage: "url('/engenho.png')",
+            backgroundImage: "url('/casa-grande.png')",
             backgroundSize: "cover",
             filter: "blur(2px)",
           }}
@@ -32,7 +32,7 @@ export default function Home() {
               textShadow: "4px 4px 8px rgba(0, 0, 0, 0.7)",
             }}
           >
-            Engenho Nogueira <br /> Tradição e Sabor <br /> em cada Dose
+            Cachaça Nogueira <br /> Marcante como o nomeda família, inesquecível como uma infância no sertão.
           </h1>
         </div>
       </section>
@@ -65,46 +65,52 @@ export default function Home() {
       </section>
 
       {/* Produtos */}
-      <section id="produtos" className="p-6 md:p-12 bg-gray-100">
-        <h2 className="text-3xl font-bold mb-4 text-center">Nossos Produtos</h2>
+      <section id="produtos" className="p-6 md:p-12 bg-gray-100 w-full border-t-2 border-b-2 border-gray-300">
+        <h2 className="text-5xl font-bold mb-4 text-center" style={{ fontFamily: 'MinhaFonte' }}>Principais Produtos</h2>
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {/* Produto 1 */}
-          <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
+          <div
+            style={{ fontFamily: "MinhaFonte" }}
+            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto1.png"
-              alt={"Produto 1"}
+              alt={"Licor de Bombom"}
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={300}
               height={300} />
-            <h3 className="text-lg font-semibold mt-2">Licor de Bombom</h3>
+            <h3 className="text-lg font-semibold" >LICOR DE BOMBOM</h3>
             <p className="text-sm text-gray-600">Licor de Bombom: A mistura de sabores da cachaça Nogueira e os toques doces dos bombons de morango, menta, café e chocolate</p>
           </div>
 
           {/* Produto 2 */}
-          <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
+          <div
+            style={{ fontFamily: "MinhaFonte" }}
+            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto2.png"
-              alt="Cachaça no Amendoim"
+              alt="Cachaça envelhecida"
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={400}
               height={400} />
-            <h3 className="text-lg font-semibold mt-2">Cachaça Envelhecida</h3>
+            <h3 className="text-lg font-semibold mt-2">CACHAÇA ENVELHECIDA</h3>
             <p className="text-sm text-gray-600">Cachaças envelhecidas: Envelhecidas em toneis de Aroeira, Umburana, Bálsamo, Carvalho Europeu, Pau D'arco, Sabiá e Jaqueira. Classificadas em Premium, Extra Premium e Reserva Especial</p>
           </div>
 
           {/* Produto 3 */}
-          {/* <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
+          <div
+            style={{ fontFamily: "MinhaFonte" }}
+            className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto3.png"
-              alt="Licor artesanal"
+              alt="Chachaça Prata"
               className="h-100 w-full mx-auto object-cover rounded-lg"
               width={400}
               height={400} />
-            <h3 className="text-lg font-semibold mt-2">Licor Caseiro</h3>
-            <p className="text-sm text-gray-600">Sabores variados preparados com frutas da região e muito carinho.</p>
-          </div> */}
+            <h3 className="text-lg font-semibold mt-2">CACHAÇA PRATA</h3>
+            <p className="text-sm text-gray-600">Cachaça Prata: O sabor autêntico da cachaça de alambique de cobre produzida em Viçosa do Ceará</p>
+          </div>
 
-          Produto 4
+          {/* Produto 4 */}
           <div className="bg-white rounded-xl shadow-md p-4 text-center hover:scale-105 transition-transform duration-300">
             <Image
               src="/produto4.png"
