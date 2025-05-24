@@ -3,15 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
 
 export default function Products() {
     return (
         <section id="produtos" className="p-6 md:p-12 bg-gray-100 w-full border-t-2 border-b-2 border-gray-300">
             <h2 className="text-5xl font-bold mb-4 text-center" style={{ fontFamily: 'var(--font-radley)' }}>Principais Produtos</h2>
             <Swiper
-                pagination={{ clickable: false }}
                 spaceBetween={20}
                 slidesPerView={1}
                 autoplay={{ delay: 2000, disableOnInteraction: true }}
