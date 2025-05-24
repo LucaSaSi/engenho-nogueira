@@ -50,7 +50,7 @@ export default function Header() {
                 <nav
                     className={`
                         ${isMenuOpen ? 'flex' : 'hidden'}
-                        flex-col absolute top-full left-0 w-full bg-gray-800 md:static md:flex md:flex-row md:w-auto md:items-center md:space-x-4
+                        flex-col text-center absolute top-full left-0 w-full bg-gray-800 md:static md:flex md:flex-row md:w-auto md:items-center md:space-x-4
                     `}
                 >
                     <Link
@@ -62,17 +62,17 @@ export default function Header() {
                     >
                         Localização
                     </Link>
-                    <Link style={{ fontFamily: "var(--font-radley)" }} href="#sobre" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
-                        Sobre
-                    </Link>
                     <Link style={{ fontFamily: "var(--font-radley)" }} href="#produtos" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
                         Produtos
+                    </Link>
+                    <Link style={{ fontFamily: "var(--font-radley)" }} href="#contato" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
+                        Contato
                     </Link>
                     <Link style={{ fontFamily: "var(--font-radley)" }} href="#visitas" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
                         Visitas
                     </Link>
-                    <Link style={{ fontFamily: "var(--font-radley)" }} href="#contato" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
-                        Contato
+                    <Link style={{ fontFamily: "var(--font-radley)" }} href="#sobre" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
+                        Sobre
                     </Link>
                 </nav>
             </div>
