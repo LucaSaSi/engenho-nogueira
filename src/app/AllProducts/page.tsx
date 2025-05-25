@@ -39,6 +39,16 @@ const produtos = [
         caixa: "R$480,00 (12 unid.)",
         imagem: "/produto-sabia.png",
     },
+    // produto de maracujá
+    {
+        nome: "Cachaça Nogueira Maracujá",
+        descricao: "Sabor tropical com notas de maracujá. Ouro, 1 ano em tonel de 700L.",
+        preco: "R$35,00",
+        volume: "500ml",
+        teor: "40% G º L",
+        caixa: "R$420,00 (12 unid.)",
+        imagem: "/produto-maracuja.png",
+    },
     {
         nome: "Licor Bombom",
         descricao: "Sabores: Café, Chocolate, Morango, Menta. Validade: Indeterminada.",
@@ -66,25 +76,68 @@ const clientes = [
 
 export default function AllProductsPage() {
     return (
-        <main className="w-full mx-auto p-4 bg-green-400">
-            <h1
-                className="text-4xl font-bold mb-2 text-center"
-                style={{ fontFamily: "var(--font-radley)" }}
-            >
-                Cachaça Nogueira
-            </h1>
-            <p className="text-center text-lg mb-8" style={{ fontFamily: "var(--font-dosis)" }}>
-                Marcante como o nome da família, inesquecível como uma infância no sertão.
-            </p>
+        <main className="w-full mx-auto p-4 bg-emerald-800">
+            {/* section apresentação */}
+            <section
+                className="mb-8 w-full h-130 bg-cover bg-center rounded-lg"
+                style={{
+                    backgroundImage: "url('/thamb.png')", backgroundSize: "cover"
+                    , opacity: "0.8"
 
-            <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-2">Sobre</h2>
-                <p>
-                    Desde os meados do século XIX, a família Nogueira mantém a tradição de produzir cachaça
-                    artesanal em seu engenho localizado em Viçosa do Ceará. Produzida de forma familiar, a
-                    cachaça Nogueira carrega os sabores e cultura do sertão.
-                </p>
-                <ul className="mt-2 text-sm text-gray-700">
+                }}>
+                {/* div da logo */}
+                <div className="flex  flex-col items-center justify-center-safe h-1/2"
+                    style={{
+                        backgroundColor: "rgba(0, 0, 0, 0.5)"
+
+                    }}>
+                    <Image
+
+                        src={"/logo.png"}
+                        width={400} height={300}
+                        alt="cachaça ao copo" />
+                    <h1 className="font-bold text-3xl" style={{ fontFamily: "var(--font-dosis)" }}>DESDE 1892</h1>
+                </div>
+                {/* div do texto */}
+                <div className="flex  flex-col items-center justify-end-safe h-1/2 bg-opacity-50"
+                    style={{
+                        backgroundColor: "rgba(0, 0, 0, 0.5)"
+
+                    }}>
+                    <p className="md:text-3xl text-center text-lg mb-8" style={{ fontFamily: "var(--font-dodis)", fontStyle: "italic" }}>
+                        Marcante como o nome da família, <br /> inesquecível como uma infância no sertão.
+                    </p>
+                </div>
+            </section>
+            {/* section brinde */}
+            <section
+                className="flex flex-col mb-8 h-130 w-full justify-center-safe rounded-md"
+                style={{
+                    backgroundImage: "url('/fundobrinde.png')",
+                    backgroundPositionX: "center",
+                    backgroundSize: "cover",
+                    backgroundPositionY: "center",
+                    opacity: "0.8"
+
+                }}>
+                {/* div parágrafo */}
+
+                <div className="flex  flex-col items-center justify-center h-1/2"
+                    style={{
+                        backgroundColor: "rgba(0, 0, 0, 0.5)"
+                    }}
+                >
+                    <p className="text-center text-whith text-lg mb-8 md:w-1/2 md:text-4xl md:font-bold" style={{ fontFamily: "var(--font-dosis)", fontStyle: "italic" }}>
+                        Desde os meados do século XIX, a família Nogueira mantém a tradição de produzir cachaça
+                        artesanal em seu engenho localizado em Viçosa do Ceará. Produzida de forma familiar, a
+                        cachaça Nogueira carrega os sabores e cultura do sertão.
+                    </p>
+                </div>
+                {/* div infos */}
+                <ul className="flex flex-col justify-center-safe h-1/2 md:text-2xl sm:text-lg text-gray-50 p-4" style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.5)"
+
+                }}>
                     <li>
                         <b>Razão Social:</b> Jorge Mauricio Mapurunga Nogueira - ME
                     </li>
@@ -105,16 +158,20 @@ export default function AllProductsPage() {
                     </li>
                 </ul>
             </section>
-
-            <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4">Produtos</h2>
+            {/* section produtos */}
+            <section className="mb-8 pb-4 border-b-2 rounded-l-md rounded-r-md">
+                <h2 className="text-5xl font-semibold mb-4 border-b-2 h-15 rounded-l-lg rounded-r-lg text-center">Catálogo</h2>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {produtos.map((produto, idx) => (
                         <div
                             key={idx}
-                            className="bg-white rounded-xl shadow-md p-4 flex flex-col items-center text-center"
+                            className="bg-lime-100 rounded-xl shadow-md p-4 flex flex-col items-center text-center"
+                            // style={{
+                            //     backgroundColor: "rgba(0, 0, 0, 0.5)"
+
+                            // }}
                         >
-                            <div className="mb-2 w-full flex justify-center">
+                            <div className="mb-2 w-full flex justify-center hover:scale-95 transition-transform duration-300">
                                 {/* Substitua pelo caminho correto da imagem em /public */}
                                 <Image
                                     src={produto.imagem}
@@ -124,9 +181,9 @@ export default function AllProductsPage() {
                                     className="rounded-lg object-cover"
                                 />
                             </div>
-                            <h3 className="text-lg font-bold mb-1">{produto.nome}</h3>
-                            <p className="text-sm mb-1">{produto.descricao}</p>
-                            <div className="text-sm text-gray-700 mb-1">
+                            <h3 className="text-lg text-gray-950 font-bold mb-1" style={{ fontFamily: "var(--font-radley)" }}>{produto.nome}</h3>
+                            <p className="text-sm text-gray-800 mb-1">{produto.descricao}</p>
+                            <div className="text-sm text-gray-600 mb-1">
                                 Volume: {produto.volume} | Teor: {produto.teor}
                             </div>
                             <div className="text-green-700 font-semibold mb-1">{produto.preco}</div>
@@ -135,16 +192,16 @@ export default function AllProductsPage() {
                     ))}
                 </div>
             </section>
-
+            {/* section clientes */}
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-2">Portfólio de Clientes</h2>
-                <ul className="list-disc list-inside text-gray-700">
+                <ul className="list-disc list-inside text-gray-200">
                     {clientes.map((cliente, idx) => (
                         <li key={idx}>{cliente}</li>
                     ))}
                 </ul>
             </section>
-
+            {/* section contato */}
             <section className="mb-8 text-center">
                 <p className="italic mb-2">
                     “Cada cachaça deste catálogo é fruto de tradição e paixão.”
