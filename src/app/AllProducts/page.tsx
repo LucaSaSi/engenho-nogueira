@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const produtos = [
     {
@@ -127,7 +128,7 @@ export default function AllProductsPage() {
                         backgroundColor: "rgba(0, 0, 0, 0.5)"
                     }}
                 >
-                    <p className="text-center text-whith text-lg mb-8 md:w-1/2 md:text-4xl md:font-bold" style={{ fontFamily: "var(--font-dosis)", fontStyle: "italic" }}>
+                    <p className="text-center text-whith text-lg mb-8 md:w-1/2 md:text-2xl md:font-semibold" style={{ fontFamily: "var(--font-dosis)", fontStyle: "italic" }}>
                         Desde os meados do século XIX, a família Nogueira mantém a tradição de produzir cachaça
                         artesanal em seu engenho localizado em Viçosa do Ceará. Produzida de forma familiar, a
                         cachaça Nogueira carrega os sabores e cultura do sertão.
@@ -166,10 +167,10 @@ export default function AllProductsPage() {
                         <div
                             key={idx}
                             className="bg-lime-100 rounded-xl shadow-md p-4 flex flex-col items-center text-center"
-                            // style={{
-                            //     backgroundColor: "rgba(0, 0, 0, 0.5)"
+                        // style={{
+                        //     backgroundColor: "rgba(0, 0, 0, 0.5)"
 
-                            // }}
+                        // }}
                         >
                             <div className="mb-2 w-full flex justify-center hover:scale-95 transition-transform duration-300">
                                 {/* Substitua pelo caminho correto da imagem em /public */}
@@ -181,59 +182,71 @@ export default function AllProductsPage() {
                                     className="rounded-lg object-cover"
                                 />
                             </div>
-                            <h3 className="text-lg text-gray-950 font-bold mb-1" style={{ fontFamily: "var(--font-radley)" }}>{produto.nome}</h3>
+                            <h3 className="text-2xl text-emerald-900 font-bold mb-1" style={{ fontFamily: "var(--font-radley)" }}>{produto.nome}</h3>
                             <p className="text-sm text-gray-800 mb-1">{produto.descricao}</p>
                             <div className="text-sm text-gray-600 mb-1">
                                 Volume: {produto.volume} | Teor: {produto.teor}
                             </div>
-                            <div className="text-green-700 font-semibold mb-1">{produto.preco}</div>
-                            <div className="text-xs text-gray-500">{produto.caixa}</div>
+                            <div className="text-gray-100 w-20 bg-emerald-800 border-2 font-bold mb-1">{produto.preco}</div>
+                            <div className="text-xs font-semibold text-gray-500">{produto.caixa}</div>
                         </div>
                     ))}
                 </div>
             </section>
             {/* section clientes */}
-            <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-2">Portfólio de Clientes</h2>
-                <ul className="list-disc list-inside text-gray-200">
+            <section className="mb-8 h-130 flex flex-col items-left justify-center p-4" style={{ backgroundImage: "url('/barrisFundo.png')", backgroundSize: "cover", backgroundPositionY: "center", opacity: "0.8" }}>
+                <h2 className="text-3xl font-semibold mb-2">Portfólio de Clientes</h2>
+                <ul className="list-disc list-inside text-gray-100 backdrop-blur-sm border-2 border-gray-400 p-4">
                     {clientes.map((cliente, idx) => (
                         <li key={idx}>{cliente}</li>
                     ))}
                 </ul>
             </section>
             {/* section contato */}
-            <section className="mb-8 text-center">
-                <p className="italic mb-2">
+            <section className="flex itens-center flex-col text-center h-50 drop-shadow-lg bg-emerald-900 rounded-lg p-4"
+                style={{
+                    backgroundImage: "url('/thamb.png')",
+                    backgroundSize: "cover",
+                    backgroundPositionY: "center",
+                    opacity: "0.8",
+                    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)"
+                }}
+            >
+                <p className="italic mb-2 text-2xl">
                     “Cada cachaça deste catálogo é fruto de tradição e paixão.”
                 </p>
-                <div className="flex flex-col items-center gap-2">
-                    <span>
-                        Contato:{' '}
+                <div className="backdrop-blur-sm flex flex-col border-2 border-gray-400 justify-center gap-2 z-10">
+                    <span >
+                        {/* Contato:{' '} */}
+                        <FaInstagram className="inline text-cyan-400" />
                         <a
                             href="https://www.instagram.com/engenhonogueira"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-700 underline"
+                            className="text-gray-100 underline text-lg sm:text-sm"
                         >
                             @engenhonogueira
                         </a>
-                        {' '}
-                        •{' '}
+                    </span>
+                    {/* {' '}
+                        •{' '} */}
+                    <span>
+                        <FaWhatsapp className="inline text-green-600" />
                         <a
                             href="https://wa.me/558896973991"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-green-700 underline"
+                            className="text-gray-100 underline text-lg sm:text-sm"
                         >
                             (88) 9 9697-3991
                         </a>
                     </span>
                 </div>
+                <p className="text-center text-sm text-gray-400 mt-4">
+                    Obrigado por brindar conosco!
+                </p>
             </section>
 
-            <p className="text-center text-sm text-gray-500 mt-8">
-                Obrigado por brindar conosco!
-            </p>
         </main>
     );
 }
