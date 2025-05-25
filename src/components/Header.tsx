@@ -74,6 +74,9 @@ export default function Header() {
                     <Link style={{ fontFamily: "var(--font-radley)" }} href="#sobre" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
                         Sobre
                     </Link>
+                   <Link style={{ fontFamily: "var(--font-radley)" }} href="/Restaurant" className="block text-xl text-gray-100 hover:text-green-400 transition py-2 px-4">
+                        Restaurante
+                    </Link>
                 </nav>
             </div>
         </header>
