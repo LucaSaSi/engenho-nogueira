@@ -1,10 +1,13 @@
 'use client';
-// import Image from 'next/image';
-// import dynamic from 'next/dynamic';
+import Link from "next/link";
+import { IoArrowUndoCircle } from "react-icons/io5";
 
 export default function SustentabilidadePage() {
     return (
         <main className="w-full flex flex-col justify-center items-center mx-auto bg-gradient-to-b from-emerald-800 to-emerald-50">
+            <Link href="/" className="absolute top-4 left-4 bg-emerald-600 rounded-full w-8 h-8 flex justify-center items-center text-center text-shadow-emerald-500 hover:bg-emerald-300 transition-colors">
+                <IoArrowUndoCircle fontSize={30} />
+            </Link>
             <h1 className="flex items-center justify-center md:text-3xl text-2xl h-20 w-full bg-gray-700 text-center font-bold text-gray-100"
                 style={{ fontFamily: 'var(--font-radley)' }}
             >Sustentabilidade no Engenho Nogueira</h1>
@@ -41,7 +44,6 @@ export default function SustentabilidadePage() {
                         controls
                         className="w-full h-150 rounded shadow-lg"
                         poster="/brinde.png"
-
                     >
                         <source src="/video/video-adubo.mp4" type="video/mp4" />
                         Seu navegador não suporta vídeo HTML5.
