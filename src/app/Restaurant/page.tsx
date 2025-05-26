@@ -1,12 +1,12 @@
 'use client';
-import DraggableBox from '@/components/buttom';
+// import DraggableBox from '@/components/buttom';
 import React from 'react';
 
 export default function RestaurantPage() {
 
   return (
     <main className="max-full mx-auto p-4 text-gray-900 bg-emerald-800">
-      <DraggableBox />
+      {/* <DraggableBox /> */}
       <h1 className="md:text-4xl text-3xl font-bold text-center mb-6" style={{ fontFamily: "var(--font-radley)" }}>
         Cardápio do Restaurante
       </h1>
