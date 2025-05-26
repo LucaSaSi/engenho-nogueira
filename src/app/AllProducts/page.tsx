@@ -194,16 +194,23 @@ export default function AllProductsPage() {
                 </div>
             </section>
             {/* section clientes */}
-            <section className="mb-8 h-130 flex flex-col items-left justify-center p-4" style={{ backgroundImage: "url('/barrisFundo.png')", backgroundSize: "cover", backgroundPositionY: "center", opacity: "0.8" }}>
-                <h2 className="text-3xl font-semibold mb-2">Portfólio de Clientes</h2>
-                <ul className="list-disc list-inside text-gray-100 backdrop-blur-sm border-2 border-gray-400 p-4">
+            <section
+                className="mb-8 h-130 flex flex-col items-left justify-center gap-4 p-4"
+                style={{
+                    backgroundImage: "url('/barrisFundo.png')"
+                    , backgroundSize: "cover",
+                    backgroundPositionY: "center",
+                    opacity: "0.8"
+                }}>
+                <h2 className="text-3xl md:w-1/4 md:text-center text-center border-b-2 font-semibold mb-2">Portfólio de Clientes</h2>
+                <ul className="list-disc list-inside md:w-1/4 rounded-2xl text-gray-100 backdrop-blur-sm border-2 border-gray-400 p-4">
                     {clientes.map((cliente, idx) => (
                         <li key={idx}>{cliente}</li>
                     ))}
                 </ul>
             </section>
             {/* section contato */}
-            <section className="flex itens-center flex-col text-center h-50 drop-shadow-lg bg-emerald-900 rounded-lg p-4"
+            <section className="flex itens-center flex-col text-center h-80 drop-shadow-lg bg-emerald-900 rounded-lg"
                 style={{
                     backgroundImage: "url('/thamb.png')",
                     backgroundSize: "cover",
@@ -212,10 +219,10 @@ export default function AllProductsPage() {
                     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)"
                 }}
             >
-                <p className="italic mb-2 text-2xl">
-                    “Cada cachaça deste catálogo é fruto de tradição e paixão.”
-                </p>
-                <div className="backdrop-blur-sm flex flex-col border-2 border-gray-400 justify-center gap-2 z-10">
+                <div className="backdrop-blur-xs h-full  flex flex-col border-gray-400 justify-center gap-2">
+                    <p className="italic mb-2 text-2xl ">
+                        “Cada cachaça deste catálogo é fruto de tradição e paixão.”
+                    </p>
                     <span >
                         {/* Contato:{' '} */}
                         <FaInstagram className="inline text-cyan-400" />
@@ -241,10 +248,13 @@ export default function AllProductsPage() {
                             (88) 9 9697-3991
                         </a>
                     </span>
+                    <div className="flex flex-col items-center ">
+                        <p className="text-center text-sm text-gray-400 mt-4">
+                            Obrigado por brindar conosco!
+                        </p>
+                        <Image src={"/logo.png"} alt={"logo noguiera"} width={200} height={200} />
+                    </div>
                 </div>
-                <p className="text-center text-sm text-gray-400 mt-4">
-                    Obrigado por brindar conosco!
-                </p>
             </section>
 
         </main>
