@@ -1,13 +1,17 @@
 'use client';
-// import DraggableBox from '@/components/buttom';
 import React from 'react';
+import Link from 'next/link';
+import { IoArrowUndoCircle } from 'react-icons/io5';
 
 export default function RestaurantPage() {
 
   return (
     <main className="max-full mx-auto p-4 text-gray-900 bg-gradient-to-b from-emerald-800 to-emerald-200 min-h-screen">
-      {/* <DraggableBox /> */}
-      <h1 className="md:text-5xl text-3xl text-teal-100 font-bold text-center mb-6" style={{ fontFamily: "var(--font-joti-one)" }}>
+      <Link href="/" className="absolute top-4 left-4 bg-emerald-200 rounded-full w-8 h-8 flex justify-center items-center text-center text-shadow-emerald-500 hover:bg-emerald-300 transition-colors">
+        <IoArrowUndoCircle fontSize={30} />
+      </Link>
+
+      <h1 className="md:text-5xl text-3xl mt-10 text-teal-100 font-bold text-center mb-6" style={{ fontFamily: "var(--font-joti-one)" }}>
         Cardápio do Restaurante
       </h1>
 
@@ -116,6 +120,9 @@ export default function RestaurantPage() {
         </div>
       </div>
       <p className="text-center text-sm text-gray-800 mt-4">Obs: Cobramos taxa de 10%</p>
+      <Link href="/" className="absolute top-4 left-4 bg-emerald-200 rounded-full w-8 h-8 flex justify-center items-center text-center text-shadow-emerald-500 hover:bg-emerald-300 transition-colors">
+        <IoArrowUndoCircle fontSize={30} />
+      </Link>
     </main>
   );
 }
