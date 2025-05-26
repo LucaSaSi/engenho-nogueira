@@ -1,6 +1,6 @@
 'use client'
-
 import Image from "next/image";
+import DraggableButton from "@/components/buttom";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const produtos = [
@@ -78,6 +78,8 @@ const clientes = [
 export default function AllProductsPage() {
     return (
         <main className="w-full mx-auto p-4 bg-emerald-800">
+            {/* Botão flutuante para mobile */}
+            <DraggableButton />
             {/* section apresentação */}
             <section
                 className="mb-8 w-full h-130 bg-cover bg-center rounded-lg"
