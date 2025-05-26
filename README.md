@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Engenho Nogueira Site
 
-## Getting Started
+Este é o site oficial do Engenho Nogueira, desenvolvido com [Next.js](https://nextjs.org), React e Tailwind CSS. O projeto apresenta a história, produtos, visitação, restaurante e formas de contato do Engenho Nogueira, tradicional produtor de cachaça artesanal em Viçosa do Ceará.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Página inicial** com banner, apresentação e navegação responsiva.
+- **Seção Sobre**: história do engenho e da família Nogueira.
+- **Catálogo de Produtos**: carrossel responsivo com os principais produtos (cachaças, licores, drinks).
+- **Visitação**: informações sobre o tour guiado, regras e agendamento via WhatsApp.
+- **Restaurante**: cardápio completo com entradas, guarnições, refeições, bebidas, drinks e sobremesas.
+- **Contato**: links para WhatsApp, Instagram, Facebook, YouTube e TikTok.
+- **Portfólio de Clientes**: lista de estabelecimentos que comercializam os produtos.
+- **Botão flutuante mobile** para voltar ao início.
+- **Design responsivo** para desktop e mobile.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como rodar o projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Configure as variáveis de ambiente em um arquivo `.env` na raiz do projeto:
+   ```
+   NEXT_PUBLIC_WHATSAPP_URL="https://wa.me/558896973991"
+   NEXT_PUBLIC_INSTAGRAM_URL="https://www.instagram.com/engenhonogueira"
+   NEXT_PUBLIC_FACEBOOK_URL="https://www.facebook.com/cachacanogueira"
+   NEXT_PUBLIC_YOUTUBE_URL="https://www.youtube.com/channel/UCDA9FiislCGXkel5IvjdKRw"
+   NEXT_PUBLIC_TIKTOK_URL="https://www.tiktok.com/@engenhonogueira"
+   ```
 
-## Learn More
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura de Pastas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/app/page.tsx` — Página inicial
+- `src/components/Products.tsx` — Carrossel de produtos
+- `src/components/Contact.tsx` — Seção de contato e redes sociais
+- `src/app/AllProducts/page.tsx` — Catálogo completo de produtos
+- `src/app/Restaurant/page.tsx` — Cardápio do restaurante
+- `public/` — Imagens e fontes
 
-## Deploy on Vercel
+## Tecnologias Utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swiper](https://swiperjs.com/) (carrossel de produtos)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+O deploy pode ser feito facilmente na [Vercel](https://vercel.com/), com suporte a variáveis de ambiente para produção.
+
+## Créditos
+
+Desenvolvido por Engenho Nogueira.  
+Contato: [@engenhonogueira](https://www.instagram.com/engenhonogueira) | WhatsApp: (88) 9 9697-3991
+
+---
+
+> “Cada cachaça deste catálogo é fruto de tradição e paixão.”
