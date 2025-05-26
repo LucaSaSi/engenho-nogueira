@@ -31,7 +31,7 @@ export default function Home() {
             style={{
               fontFamily: "var(--font-joti-one)",
               // fontSize: "3rem",
-              textShadow: "4px 4px 8px rgba(0, 0, 0, 0.7)",
+              textShadow: "6px 6px 10px rgba(4, 4, 4, 4)",
             }}
           >
             Cachaça Nogueira <br /> Marcante como o nome da família, inesquecível como uma infância no sertão
