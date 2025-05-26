@@ -115,7 +115,7 @@ export default function RestaurantPage() {
           </section>
         </div>
       </div>
-      <p className="text-center text-sm text-gray-700 mt-4">Obs: Cobramos taxa de 10%</p>
+      <p className="text-center text-sm text-gray-200 mt-4">Obs: Cobramos taxa de 10%</p>
     </main>
   );
 }
