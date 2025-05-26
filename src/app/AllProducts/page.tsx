@@ -1,7 +1,8 @@
 'use client'
 import Image from "next/image";
-// import DraggableButton from "@/components/buttom";
+import Link from "next/link";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { IoArrowUndoCircle } from "react-icons/io5";
 
 const produtos = [
     {
@@ -78,8 +79,9 @@ const clientes = [
 export default function AllProductsPage() {
     return (
         <main className="w-full mx-auto p-4 bg-emerald-800">
-            {/* Botão flutuante para mobile */}
-            {/* <DraggableButton /> */}
+            <Link href="/" className="absolute top-4 left-4 bg-emerald-200 rounded-full w-8 h-8 flex justify-center items-center text-center text-shadow-emerald-500 hover:bg-emerald-300 transition-colors">
+                <IoArrowUndoCircle fontSize={30} />
+            </Link>
             {/* section apresentação */}
             <section
                 className="mb-8 w-full h-130 bg-cover bg-center rounded-lg"
