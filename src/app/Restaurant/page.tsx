@@ -11,8 +11,13 @@ export default function RestaurantPage() {
         Cardápio do Restaurante
       </h1>
 
-      <div className='max-w-3xl mx-auto bg-white p-2 rounded-lg shadow-lg'>
-        <div className='p-4 border-2 border-gray-400 rounded-lg'>
+      <div className='max-w-3xl mx-auto bg-white p-2 rounded-lg shadow-lg'
+        style={{ backgroundImage: "url('/prato.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+
+      >
+        <div
+          className='p-4 rounded-lg bg-white/30 backdrop-blur-sm'
+        >
 
           {/* Entradas */}
           <section className="mb-6 border-b-2 border-gray-300 p-4 rounded-lg">
@@ -46,23 +51,23 @@ export default function RestaurantPage() {
             <h2 className="text-2xl text-center font-semibold mb-2 border-b-2">Refeições</h2>
             <ul className="space-y-2">
               <li>
-                <span className="font-semibold">Galinha Caipira</span>
-                <span className="block text-sm text-gray-600">Arroz, feijão ou fava, pirão, salada e farofa</span>
+                <span className="font-semibold underline">Galinha Caipira</span>
+                <span className="block text-sm font-bold text-gray-800">Arroz, feijão ou fava, pirão, salada e farofa</span>
                 <span className="block">4 Pessoas: <b>R$140,00</b> | 2 Pessoas: <b>R$80,00</b></span>
               </li>
               <li>
-                <span className="font-semibold">Pato à Cabidela</span>
-                <span className="block text-sm text-gray-600">Arroz, feijão ou fava, farofa e salada</span>
+                <span className="font-semibold underline">Pato à Cabidela</span>
+                <span className="block text-sm font-bold text-gray-800">Arroz, feijão ou fava, farofa e salada</span>
                 <span className="block">4 Pessoas: <b>R$150,00</b> | 2 Pessoas: <b>R$85,00</b></span>
               </li>
               <li>
-                <span className="font-semibold">Porco Assado</span>
-                <span className="block text-sm text-gray-600">Arroz, feijão ou fava, farofa e salada</span>
+                <span className="font-semibold underline">Porco Assado</span>
+                <span className="block text-sm font-bold text-gray-800">Arroz, feijão ou fava, farofa e salada</span>
                 <span className="block">4 Pessoas: <b>R$130,00</b> | 2 Pessoas: <b>R$75,00</b></span>
               </li>
               <li>
-                <span className="font-semibold">Assado de Panela</span>
-                <span className="block text-sm text-gray-600">Arroz, feijão ou fava, farofa e salada</span>
+                <span className="font-semibold underline">Assado de Panela</span>
+                <span className="block text-sm font-bold text-gray-800">Arroz, feijão ou fava, farofa e salada</span>
                 <span className="block">4 Pessoas: <b>R$130,00</b> | 2 Pessoas: <b>R$75,00</b></span>
               </li>
             </ul>
@@ -71,8 +76,10 @@ export default function RestaurantPage() {
 
       </div>
 
-      <div className='max-w-3xl mx-auto bg-white p-2 rounded-lg shadow-lg mt-8'>
-        <div className='p-4 border-2 border-gray-400 rounded-lg'>
+      <div className='max-w-3xl mx-auto bg-white p-2 rounded-lg shadow-lg mt-8'
+        style={{ backgroundImage: "url('/brinde.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className='p-4 rounded-lg bg-white/30 backdrop-blur-sm'>
 
           {/* Bebidas */}
           <section className="mb-6 border-b-2 border-gray-300 p-4 rounded-lg">
